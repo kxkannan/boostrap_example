@@ -6,6 +6,7 @@
   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <%= stylesheet_link_tag   "bootstrap", media: "all" %>
+  <%= stylesheet_link_tag   "custom", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "bootstrap" %>
   <%= csrf_meta_tags %>
@@ -41,7 +42,22 @@
 
   </div>
 
+  <div id="wrap">
   <%= yield %>
+    </div>
+
+
+<div class="footer">
+  <div class="class">
+    <ul class="list-inline">
+      <li>© Copyright ABC, Inc 2015. Patent Pending. All Rights Reserved.</li>
+      <div class="nav navbar-nav navbar-right">
+        <li id="li_tos"><a id="terms" href="#">Terms</a></li>
+        <li id="li_privacy"><a id="privacy" href="#">Privacy</a></li>
+      </div>
+    </ul>
+  </div>
+</div>
 
 </body>
 </html>
